@@ -1,5 +1,6 @@
 - name: Update System using Yum
   hosts: all
+  become: yes
 
   tasks:
     - name: Upgrade all packages
